@@ -1,0 +1,45 @@
+﻿<Window x:Class="WPFFileApppart2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFileApppart2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1100" Background="#FF2D2D2D">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="folderSearchTxtBox" Grid.Row="0" Grid.ColumnSpan="4" Margin="5,5" Background="Aqua"/>
+        <TextBox x:Name="itemSearchTxtBox" Grid.Row="1" Grid.ColumnSpan="4" Margin="5,5" Background="Aqua"/>
+        <TextBox x:Name="outPutWindowTxtBox" Grid.Row="2" Grid.ColumnSpan="4" Grid.RowSpan="5" Margin="5,5" Background="Aqua" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+        <Button x:Name="checkIfFileExists" Content="Check If File Exits" Grid.Column="4" Margin="5,5" Background="Yellow" Click="checkIfFileExists_Click" />
+        <Button x:Name="fileExtention" Content="File Extention" Grid.Column="5" Margin="5,5" Background="Yellow" Click="fileExtention_Click" />        
+        <Button x:Name="deleteFile" Content="Delte File" Grid.Column="6" Margin="5,5" Background="Red" Click="deleteFile_Click" />
+        <Button x:Name="filesInDirectory" Content="#Files in Directory" Grid.Column="4" Grid.Row="1" Margin="5,5" Background="Yellow" Click="filesInDirectory_Click" />
+        <Button x:Name="findSubDirectories" Content="Find Subdirectories" Grid.Column="5" Grid.Row="1" Margin="5,5" Background="Yellow" Click="findSubDirectories_Click" />
+        <Button x:Name="moveDirectory" Content="Move Directory" Grid.Column="6" Grid.Row="1" Margin="5,5" Background="Red" Click="moveDirectory_Click"  />
+        <Button x:Name="ddoesDirectoryExist" Content="Does Directory Exist " Grid.Column="4" Grid.Row="2" Margin="5,5" Background="Yellow" Click="ddoesDirectoryExist_Click"/>
+        <Button x:Name="createDirectory" Content="Create Directory" Grid.Column="5" Grid.Row="2" Margin="5,5" Background="Yellow" Click="createDirectory_Click" />
+        <Button x:Name="deleteDirectory" Content="Delete Directory" Grid.Column="6" Grid.Row="2" Margin="5,5" Background="Red" Click="deleteDirectory_Click"  />
+        <Button x:Name="fndFileType" Content="Find Text Files" Grid.Column="4" Grid.Row="3" Margin="5,5" Background="Yellow" Click="fndFileType_Click"/>
+        <Button x:Name="moveFile" Content="Move a File" Grid.Column="5" Grid.Row="3" Margin="5,5" Background="Yellow" Click="moveFile_Click"  />
+        <Button x:Name="close" Content="Close" Grid.Column="6" Grid.Row="3" Margin="5,5" Background="Red" Click="close_Click"  />
+
+    </Grid>
+</Window>
